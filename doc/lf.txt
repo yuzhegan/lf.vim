@@ -1,0 +1,56 @@
+*lf.txt* lf.vim
+
+lf.vim - stupid Lf wrapper for Vim
+
+Author: Gabriel G. de Brito gabrielgbrito@icloud.com
+Version: 1.0
+Homepage: github.com/gboncoffee/lf.vim
+License: MIT
+
+==============================================================================
+INTRODUCTION                                                           *lf.vim*
+
+Lf.vim is a simple and stupid plugin to open the Lf file manager inside Vim
+and using it to change the Vim `cwd` and selecting files. It's implemented
+entirely in Vim Script
+
+NOTE: Of course, the plugin will not work if you don't have the Lf file
+manager installed. See their GitHub page for information on their side:
+https://github.com/gokcehan/lf
+
+==============================================================================
+USAGE                                                            *lf.vim-usage*
+
+The plugin implements three new commands: the main one is |Lf|, used to open
+Lf inside the default Vim |terminal|. After selecting a file, it'll open
+inside the current Vim window. If the variable |g:lf_change_cwd| is setted to
+1, it'll also change the Vim `cwd` to the last directory of Lf.
+
+==============================================================================
+COMMANDS                                                      *lf.vim-commands*
+
+*Lf*
+Opens Lf inside a |terminal|.
+
+*LfChangeCwd*
+Same, but will change the Vim `cwd` anyway, ignoring the |g:lf_change_cwd|
+variable.
+
+*LfNoChangeCwd*
+Same, but will NOT change the Vim `cwd`, ignoring the |g:lf_change_cwd|
+variable.
+
+==============================================================================
+SETTINGS                                                      *lf.vim-settings*
+
+*g:lf_change_cwd*       If 0 (default), |Lf| will not change the Vim `cwd` by
+                      default. If 1, it'll change.
+
+*g:lf_hijack_netrw*     If 1 (default), |Lf| will hijack netrw, becaming the
+                      default to explore directories. If 0, |Lf| will not 
+                      hijack netrw. 
+
+*g:lf_change_cwd_cmd*   Defines the Vim |cd| command. Defaults to |cd|.
+
+------------------------------------------------------------------------------
+vim:tw=78:ts=4:ft=help:norl: 

@@ -1,0 +1,11 @@
+Lf	lf.txt	/*Lf*
+LfChangeCwd	lf.txt	/*LfChangeCwd*
+LfNoChangeCwd	lf.txt	/*LfNoChangeCwd*
+g:lf_change_cwd	lf.txt	/*g:lf_change_cwd*
+g:lf_change_cwd_cmd	lf.txt	/*g:lf_change_cwd_cmd*
+g:lf_hijack_netrw	lf.txt	/*g:lf_hijack_netrw*
+lf.txt	lf.txt	/*lf.txt*
+lf.vim	lf.txt	/*lf.vim*
+lf.vim-commands	lf.txt	/*lf.vim-commands*
+lf.vim-settings	lf.txt	/*lf.vim-settings*
+lf.vim-usage	lf.txt	/*lf.vim-usage*
